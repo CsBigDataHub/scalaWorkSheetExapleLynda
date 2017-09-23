@@ -23,4 +23,15 @@ object Loops{
     println(word(x))
   }
 
+  //This is how you can pass a variable lenght of arguments in scala
+  def sum(args: Int*) = {
+    var res = 0
+    for (arg <- args) res += arg
+    res
+  }
+
+  sum(1, 2, 3, 4)
+
+
+
 }

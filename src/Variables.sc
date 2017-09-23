@@ -15,5 +15,15 @@ object Variables{
 
   var ab = (1,2,(3,4))
 
+  //declaring a array
+  //https://www.journaldev.com/7915/scala-arrays-example
+  var numbers: Array[Int] = new Array[Int](5)
+  numbers = Array(23, 34, 45, 67, 78)
+  println(numbers.length)
+
+  for (i <- 0 until numbers.length) {
+    println(numbers(i))
+
+  }
 
 }
