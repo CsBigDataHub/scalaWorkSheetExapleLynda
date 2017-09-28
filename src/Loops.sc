@@ -31,7 +31,6 @@ object Loops{
   }
 
   sum(1, 2, 3, 4)
-
-
-
-}
+}                                                   // <console>:1: error: eof expected but '}' found.
+                                                    //        }
+                                                    //        ^
