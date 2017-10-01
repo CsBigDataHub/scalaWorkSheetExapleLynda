@@ -18,7 +18,8 @@ object Functions {
 
   //the below is the same fsc function as above
   // this is  a RECURSION function
-  def factorialOneLine(n: Int): Int = if (n <= 0) 1 else n * factorialOneLine(n - 1)
+  def factorialOneLine(n: Int): Int =
+    if (n <= 0) 1 else n * factorialOneLine(n - 1)
 
   factorialOneLine(5)
 
@@ -31,7 +32,6 @@ object Functions {
 
       //println(n * factorial(n-1))
       n * factorial(n - 1)
-
 
     }
 
@@ -46,8 +46,7 @@ object Functions {
     if (n > 0) {
       print(n + ", ")
       recursiveFunc(n - 1)
-    }
-    else {
+    } else {
       println(n + ".")
     }
   }
@@ -65,7 +64,10 @@ object Functions {
   factorialTailRecursiveFunc(5)
 
   //when defining a function you can define arguments with default values
-  def printName(left: String = "[", fName: String, lName: String, right: String = "]"): Unit = {
+  def printName(left: String = "[",
+                fName: String,
+                lName: String,
+                right: String = "]"): Unit = {
     println(left + fName + " " + lName + right)
   }
 
@@ -81,6 +83,5 @@ object Functions {
   }
 
   sum(1, 2, 3, 4, 5)
-
 
 }

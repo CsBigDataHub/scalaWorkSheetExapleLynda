@@ -20,8 +20,7 @@ object Decisions {
       } else {
         "salary is : $" + ((40 * rate) + ((hours - 40) * (rate * 1.5)))
       }
-    }
-    else {
+    } else {
       "This is a salaries emplopyee"
     }
   }
@@ -31,7 +30,4 @@ object Decisions {
   println(earnings("partTime", 45))
   println(earnings("fullTime", 40))
 
-
 }
-
-

@@ -1,19 +1,17 @@
-object Variables{
+object Variables {
   var greetings = null
-  var message:String = "hello"
+  var message: String = "hello"
 
   //var c,d = 124
 
-
-
   var a = 10.toString
-  a+=" ten"
+  a += " ten"
   println(a)
   println("Hello")
 
   var b = 10.15.toInt
 
-  var ab = (1,2,(3,4))
+  var ab = (1, 2, (3, 4))
 
   //declaring a array
   //https://www.journaldev.com/7915/scala-arrays-example
