@@ -14,7 +14,7 @@ object OperatorExample{
 
   val nums=1::2::3::Nil
 
-  
 
+  if (x>0 && y<0) "Both values are positive" else "one value is negative"
 
 }
