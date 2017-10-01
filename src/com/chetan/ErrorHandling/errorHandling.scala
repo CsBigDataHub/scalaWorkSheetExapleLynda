@@ -8,8 +8,8 @@ object errorHandling extends App {
     for (line <- fromFile("noFile.txt").getLines())
       println(line.toLowerCase)
   } catch {
-    case e: FileNotFoundException => println("The file is not found!")
-    case _: Exception             => println("the program has an error")
+    case e: FileNotFoundException  => println("The file is not found!")
+    case everyThingElse: Exception => println("the program has an error")
   }
   try {
     var quotient = 10 / 0
