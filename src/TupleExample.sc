@@ -10,6 +10,7 @@ object TupleExample {
 
   val symbols = Array("<", "_", ">")
   val counts = Array(2, 10, 2)
+  //to combile two tuples we use 'zip' function
   val pairs = symbols.zip(counts)
 
   for ((s, n) <- pairs) println(s * n)
